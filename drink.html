@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Minuman — Kopi Samaya Yogyakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#hero"><em>Kopi</em> Samaya</a>
+
+        <nav class="main-nav">
+          <a class="nav-link" href="/">Beranda</a>
+          <a class="nav-link" href="/about.html">Tentang</a>
+          <a class="nav-link nav-link--active" href="/drink.html"
+            >Menu Minuman</a
+          >
+          <a class="nav-link" href="/food.html">Menu Makanan</a>
+          <a class="nav-link" href="/location.html">Lokasi</a>
+          <a class="nav-link" href="/testimonial.html">Testimoni</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn--primary only-sm-up" href="#lokasi">Reservasi</a>
+          <button class="icon-btn" type="button" aria-label="Buku Menu">
+            <span class="material-symbols-outlined">menu_book</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="main">
+      <!-- PAGE HEADER -->
+      <section class="page-header">
+        <div class="page-header__meta">
+          <span class="eyebrow eyebrow--secondary">Edisi Cetak No. 03</span>
+          <span class="page-header__dot"></span>
+          <span class="eyebrow eyebrow--tertiary">Yogyakarta</span>
+        </div>
+        <h1 class="page-header__title">Menu Minuman</h1>
+        <p class="page-header__lead">
+          Biji kopi lokal disangrai sedang dan diseduh sepenuh hati. Dari
+          seduhan tubruk klasik hingga racikan susu aren khas Samaya.
+        </p>
+      </section>
+
+      <!-- SUB-NAVIGASI KATEGORI -->
+      <nav class="subnav">
+        <a class="subnav__link subnav__link--active" href="#kopi">Semua</a>
+        <a class="subnav__link" href="#kopi">Kopi</a>
+        <a class="subnav__link" href="#manual-brew">Manual Brew</a>
+        <a class="subnav__link" href="#non-kopi">Non-Kopi</a>
+        <a class="subnav__link" href="#teh-wedang">Teh &amp; Wedang</a>
+        <a class="subnav__link" href="#signature">Signature</a>
+      </nav>
+
+      <!-- CATALOG GRID -->
+      <div class="catalog">
+        <!-- ============ 01 KOPI ============ -->
+        <section class="catalog-section" id="kopi">
+          <div class="catalog-section__head">
+            <div class="catalog-section__head-left">
+              <span class="catalog-section__index">01</span>
+              <h2 class="catalog-section__title">Kopi</h2>
+            </div>
+            <span class="catalog-section__note">Sedotan &amp; Cangkir</span>
+          </div>
+
+          <div class="catalog-items">
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Espresso</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">16K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Ekstraksi tunggal biji arabika Menoreh dengan crema tebal
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Americano</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">Panas 18 / Dingin 20</span>
+              </div>
+              <p class="catalog-item__desc">
+                Espresso ganda dipadu air mineral pegunungan yang segar
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Cappuccino</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">Panas 24 / Dingin 26</span>
+              </div>
+              <p class="catalog-item__desc">
+                Seimbang antara espresso pekat, susu kukus, dan busa lembut
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <div
+                  class="catalog-item__row--inline"
+                  style="display: flex; align-items: center; gap: 0.5rem"
+                >
+                  <span class="catalog-item__name">Kopi Susu Samaya</span>
+                  <span class="menu-tag">Best Seller</span>
+                </div>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">Panas 22 / Dingin 24</span>
+              </div>
+              <p class="catalog-item__desc">
+                Espresso blend Samaya, susu segar, gula aren organik Kulon Progo
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Es Kopi Gula Aren</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">24K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Es kopi susu manis legit dengan aroma pandan alami
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 02 MANUAL BREW ============ -->
+        <section class="catalog-section" id="manual-brew">
+          <div class="catalog-section__head">
+            <div class="catalog-section__head-left">
+              <span class="catalog-section__index">02</span>
+              <h2 class="catalog-section__title">Manual Brew</h2>
+            </div>
+            <span class="catalog-section__note">Seduhan Perlahan</span>
+          </div>
+
+          <div class="catalog-items">
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <div style="display: flex; align-items: center; gap: 0.5rem">
+                  <span class="catalog-item__name">V60 Single Origin</span>
+                  <span class="menu-tag">Rekomendasi</span>
+                </div>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">28K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Biji pilihan: Menoreh Natural, Gayo Wine, atau Mandheling Washed
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Japanese Iced Coffee</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">30K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Seduhan V60 langsung menetes di atas es batu kristal bening
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Aeropress</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">26K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Seduhan bertekanan dengan bodi penuh dan keasaman bersih
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Kopi Tubruk Tradisi</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">16K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Seduhan giling kasar khas Jogja disajikan dalam cangkir blirik
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ FOTO BARISTA (FULL WIDTH) ============ -->
+        <figure class="broadsheet-photo">
+          <div class="broadsheet-photo__media">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtKcVWuOVYwnrFQV9D9h7H-k8jaMrm07H7UlMVTKbNLzLXW-5hj6RFCs0JQMgaJD8xOpi4w0Eu5HPpgYwZ5zZPBUHtLkvFlLNDfuImgs9GJVa3dyDL3hdm9DSFrOaZD6rT2VtHKiqbKizFSusJ_4dRRffQt2SWoWS_meMYH65iX04BnNTi3bIbxuVEMe1Imb3MbhADLZKi_Va2yi6jrSXkhUonj-q_8fkrs66DW69eFsaxTcAjPnP3MA"
+              alt="Barista menyeduh kopi pour over di Kopi Samaya."
+            />
+          </div>
+          <figcaption class="broadsheet-photo__caption">
+            <span class="broadsheet-photo__quote">
+              &ldquo;Menimbang takaran, menyeduh dengan kesabaran.&rdquo;
+            </span>
+            <span class="broadsheet-photo__credit">
+              Bar Barista Kopi Samaya — Jogja
+            </span>
+          </figcaption>
+        </figure>
+
+        <!-- ============ 03 NON-KOPI ============ -->
+        <section class="catalog-section" id="non-kopi">
+          <div class="catalog-section__head">
+            <div class="catalog-section__head-left">
+              <span class="catalog-section__index">03</span>
+              <h2 class="catalog-section__title">Non-Kopi</h2>
+            </div>
+            <span class="catalog-section__note">Lembut &amp; Kaya Rasa</span>
+          </div>
+
+          <div class="catalog-items">
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Matcha Latte</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">Panas 26 / Dingin 28</span>
+              </div>
+              <p class="catalog-item__desc">
+                Uji matcha murni dipadukan dengan susu segar yang gurih
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Cokelat Panas Ndalem</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">Panas 22 / Dingin 24</span>
+              </div>
+              <p class="catalog-item__desc">
+                Cokelat asli Gunungkidul dengan tingkat pahit manis pas
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Red Velvet Latte</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">Panas 24 / Dingin 26</span>
+              </div>
+              <p class="catalog-item__desc">
+                Paduan rasa vanila lembut dengan tekstur krim yang kaya
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 04 TEH & WEDANG ============ -->
+        <section class="catalog-section" id="teh-wedang">
+          <div class="catalog-section__head">
+            <div class="catalog-section__head-left">
+              <span class="catalog-section__index">04</span>
+              <h2 class="catalog-section__title">Teh &amp; Wedang</h2>
+            </div>
+            <span class="catalog-section__note">Hangat Tradisional</span>
+          </div>
+
+          <div class="catalog-items">
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Teh Tubruk Wasgitel</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">12K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Wangi, sepet, legi, kentel dengan gula batu khas tanah Jawa
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <div style="display: flex; align-items: center; gap: 0.5rem">
+                  <span class="catalog-item__name">Wedang Jahe Rempah</span>
+                  <span class="menu-tag">Best Seller</span>
+                </div>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">15K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Jahe emprit bakar, serai, cengkeh, kayu manis, dan gula aren
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Teh Melati Kraton</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">14K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Pucuk daun teh hijau beraroma kuncup melati malam hari
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 05 SIGNATURE SAMAYA ============ -->
+        <section class="catalog-section catalog-section--full" id="signature">
+          <div class="catalog-section__head">
+            <div class="catalog-section__head-left">
+              <span class="catalog-section__index">05</span>
+              <h2 class="catalog-section__title">Signature Samaya</h2>
+            </div>
+            <span class="catalog-section__note">Racikan Khas Kedai</span>
+          </div>
+
+          <div class="catalog-section__grid">
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <div style="display: flex; align-items: center; gap: 0.5rem">
+                  <span class="catalog-item__name">Samaya Latte</span>
+                  <span class="menu-tag">Baru</span>
+                </div>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">27K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Espresso, susu oat, sirup rempah kayu manis buatan tangan
+              </p>
+            </div>
+
+            <div class="catalog-item">
+              <div class="catalog-item__row">
+                <span class="catalog-item__name">Es Kopi Kelapa Senja</span>
+                <span class="catalog-item__leader"></span>
+                <span class="catalog-item__price">26K</span>
+              </div>
+              <p class="catalog-item__desc">
+                Cold brew disiram air kelapa muda segar dan perasan jeruk nipis
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- FOOTNOTE -->
+      <div class="archival-note">
+        <p class="archival-note__text">
+          * Harga tercantum dalam ribu rupiah (K) dan sudah termasuk pajak. Biji
+          kopi dapat digiling untuk dibawa pulang.
+        </p>
+        <div class="archival-note__badge">
+          <span class="archival-note__dot"></span>
+          <span class="archival-note__label"
+            >Sedia Biji Sangrai Segar Setiap Hari</span
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div class="footer__col--5 footer__brand">
+          <div>
+            <span class="footer__title">Kopi Samaya</span>
+            <p class="footer__text">
+              Kedai kopi di pelosok tenang Yogyakarta. Tempat bertukar kabar,
+              merawat ingatan, dan meresapi setiap tetes seduhan nusantara.
+            </p>
+          </div>
+          <p class="footer__copyright">
+            © 2024 Kopi Samaya Yogyakarta. Dicetak dan diseduh dengan takzim.
+          </p>
+        </div>
+
+        <div class="footer__col--4">
+          <span class="footer__heading eyebrow eyebrow--on-dark"
+            >Navigasi Halaman</span
+          >
+          <ul class="footer__list">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a class="is-active" href="#">Buku Menu</a></li>
+            <li><a href="#">Lokasi &amp; Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col--3">
+          <span class="footer__heading eyebrow eyebrow--on-dark"
+            >Kanal Sambung</span
+          >
+          <ul class="footer__list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+          <div
+            style="
+              padding-top: 1rem;
+              margin-top: 1rem;
+              border-top: 1px solid rgba(137, 114, 106, 0.4);
+            "
+          >
+            <p
+              class="eyebrow eyebrow--on-dark"
+              style="color: var(--tertiary-fixed-dim)"
+            >
+              Jam Operasional
+            </p>
+            <p
+              class="type-body-sm"
+              style="color: var(--inverse-on-surface); margin-top: 0.25rem"
+            >
+              Selasa – Minggu, 08.00 – 22.00 WIB
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

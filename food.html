@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Makanan — Kopi Samaya Yogyakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#hero"><em>Kopi</em> Samaya</a>
+
+        <nav class="main-nav">
+          <a class="nav-link" href="/">Beranda</a>
+          <a class="nav-link" href="/about.html">Tentang</a>
+          <a class="nav-link" href="/drink.html">Menu Minuman</a>
+          <a class="nav-link nav-link--active" href="/food.html"
+            >Menu Makanan</a
+          >
+          <a class="nav-link" href="/location.html">Lokasi</a>
+          <a class="nav-link" href="/testimonial.html">Testimoni</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn--primary only-sm-up" href="#lokasi">Reservasi</a>
+          <button class="icon-btn" type="button" aria-label="Buku Menu">
+            <span class="material-symbols-outlined">menu_book</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="main">
+      <!-- LEMBAR KATALOG -->
+      <div class="menu-sheet">
+        <!-- HEADER LEMBAR -->
+        <div class="menu-sheet__head">
+          <div>
+            <span
+              class="eyebrow eyebrow--secondary"
+              style="display: block; margin-bottom: 0.5rem"
+            >
+              Catalogus Edisi 2024 — Jogja
+            </span>
+            <h1 class="menu-sheet__title">Menu Makanan</h1>
+          </div>
+          <p class="menu-sheet__lead">
+            &ldquo;Santapan pengiring cangkir kopi Anda. Dimasak bersahaja dari
+            dapur belakang dengan resep rumahan yang akrab di lidah.&rdquo;
+          </p>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="filter-tabs">
+          <button
+            class="filter-tab is-active"
+            id="tab-all"
+            onclick="filterCategory('all')"
+          >
+            Semua
+          </button>
+          <button
+            class="filter-tab"
+            id="tab-camilan"
+            onclick="filterCategory('camilan')"
+          >
+            Camilan Tradisi
+          </button>
+          <button
+            class="filter-tab"
+            id="tab-makanan-berat"
+            onclick="filterCategory('makanan-berat')"
+          >
+            Makanan Berat
+          </button>
+          <button
+            class="filter-tab"
+            id="tab-manisan"
+            onclick="filterCategory('manisan')"
+          >
+            Manisan &amp; Penutup
+          </button>
+        </div>
+
+        <!-- ============ 01 CAMILAN TRADISI ============ -->
+        <section class="menu-category category-section" id="camilan">
+          <div class="menu-category__head">
+            <span class="menu-category__num">01</span>
+            <h2 class="menu-category__title">Camilan Tradisi</h2>
+            <span class="menu-category__line"></span>
+          </div>
+
+          <!-- Foto hidangan utama -->
+          <div class="dish-photo">
+            <div class="dish-photo__media">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPIVLBlKcLICmGVNLjbAMNVt2gKWwDVbypaTf6bG-84yy2u1-CpmkPdymR5sZ5fkl3Kknks1ROtRwVHk4ZtpCdRp2FjeKVwMtDjH3gfnAPl7dcU_MdVBhE1dZFaktY7hLF8C3k_5BSIYXNx7G2IaqlWyD4I832rPvVT_Ayq83fiNQ6e_LAjTsAnYi-vLeGppcDXZpJNjZKgOiEdCF_vU8zNZgPWK4YERXNtXWt_xPIvXkG6Ne-jC0Snw"
+                alt="Pisang goreng madu di atas piring keramik stoneware dengan kopi tubruk tradisional."
+              />
+            </div>
+            <div class="dish-photo__caption">
+              <span class="dish-photo__label">
+                Foto Hidangan Meja Utama: Pisang Goreng Madu &amp; Kopi Tubruk
+              </span>
+              <span class="dish-photo__code">PLT. No. 01</span>
+            </div>
+          </div>
+
+          <!-- Daftar item -->
+          <div class="menu-entries">
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <div class="menu-entry__name-group">
+                  <span class="menu-entry__name">Pisang Goreng Madu</span>
+                  <span class="menu-tag">Best Seller</span>
+                </div>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">16K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Pisang raja matang pohon berbalut adonan renyah disiram madu
+                murni hutan.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Singkong Goreng Bumbu</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">14K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Singkong pulen merekah dengan cocolan sambal roa atau terasi
+                bawang.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Roti Bakar Cokelat Keju</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">18K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Roti gandum tebal panggang arang, mentega wangi, cokelat lumer
+                dan keju parut.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Tahu Bakso Semarang</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">16K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Tahu goreng isi daging sapi gurih disajikan hangat dengan cabai
+                rawit hijau.
+              </p>
+            </div>
+
+            <div class="menu-entry menu-entry--wide">
+              <div class="menu-entry__row">
+                <div class="menu-entry__name-group">
+                  <span class="menu-entry__name"
+                    >Mendoan Anget Sambal Kecap</span
+                  >
+                  <span class="menu-tag">Vegetarian</span>
+                </div>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">15K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Tempe kedelai tipis berbalut tepung daun bawang, digoreng
+                setengah matang.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 02 MAKANAN BERAT ============ -->
+        <section class="menu-category category-section" id="makanan-berat">
+          <div class="menu-category__head">
+            <span class="menu-category__num">02</span>
+            <h2 class="menu-category__title">Makanan Berat</h2>
+            <span class="menu-category__line"></span>
+          </div>
+
+          <div class="dish-photo">
+            <div class="dish-photo__media">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuARW0SFw0Ho3k5yibnzSKS2VBlOLUXKADmo_lRkGH8kWd95YLvKip4EQdR7i5vIrtqKBFmVvZwl10m2InUiyTFneOYDUftAg6PGRLxR7I1c1N9JlT9BivNEBkKfvG7fAR_q5Rv_E1FRg4j_PaGsGFXpDkhzmXa6gJUYgN3eBeROzybOa96cUDtpae9A1jj_OmEvBv_N0no18d00_vKHkqY-0GY6kADKh6P0mWsD5oXDFtTFAnklmTLoyg"
+                alt="Hidangan berat tradisional Indonesia di atas meja kayu jati dengan cahaya alami."
+              />
+            </div>
+            <div class="dish-photo__caption">
+              <span class="dish-photo__label"
+                >Santapan Siang &amp; Petang Dapur Samaya</span
+              >
+              <span class="dish-photo__code">PLT. No. 02</span>
+            </div>
+          </div>
+
+          <div class="menu-entries">
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <div class="menu-entry__name-group">
+                  <span class="menu-entry__name"
+                    >Nasi Ayam Suwir Sambal Matah</span
+                  >
+                  <span class="menu-tag menu-tag--primary">Pedas</span>
+                </div>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">28K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Nasi pulen hangat, ayam suwir berbumbu rempah, sambal matah
+                kecombrang segar.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Mie Goreng Jawa Spesial</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">25K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Mie kuning pipih dimasak kecap manis kental, suwiran ayam
+                kampung, sayur kol segar.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Nasi Telur Balado Samaya</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">22K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Telur mata sapi ceplok renyah pinggirnya, disiram bumbu balado
+                tomat pedas gurih.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Nasi Rawon Daging Dapur</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">32K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Kuah kluwek hitam pekat beraroma gurih dengan irisan daging
+                empuk dan tauge pendek.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ 03 MANISAN & PENUTUP ============ -->
+        <section class="menu-category category-section" id="manisan">
+          <div class="menu-category__head">
+            <span class="menu-category__num">03</span>
+            <h2 class="menu-category__title">Manisan &amp; Penutup</h2>
+            <span class="menu-category__line"></span>
+          </div>
+
+          <div class="dish-photo">
+            <div class="dish-photo__media">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXXGVkhmqcDWqdztA-PKr-RzTTnkktOgd2sTVLgY2tVFnyqCpPVnvCRq2nlel47j1bws6jVJitQX6cJyXVZdWdW7cATvplda-LiqCOKd5mzfDf-G2VlDQvOMLtUFr3ml7_vMLS28Zkyh93hAxkm8Yy1m8p9--dT3MUo86_jHA2C1s3LzYOb6jHRqOTG5c4lwVoqiPltW0d8Eju_iLuHDG3dQhw3XKK0gX10RwfhMAFWJXpfsw6Oq7UOg"
+                alt="Penganan manis tradisional dan olahan cokelat lokal di piring keramik."
+              />
+            </div>
+            <div class="dish-photo__caption">
+              <span class="dish-photo__label">
+                Penganan Manis Tradisi &amp; Olahan Cokelat Lokal
+              </span>
+              <span class="dish-photo__code">PLT. No. 03</span>
+            </div>
+          </div>
+
+          <div class="menu-entries">
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name"
+                  >Pisang Bakar Es Krim Kelapa</span
+                >
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">22K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Pisang kepok panggang wangi kelapa disajikan dengan satu skup es
+                krim puter.
+              </p>
+            </div>
+
+            <div class="menu-entry">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name"
+                  >Brownies Fudgy Cokelat Temanggung</span
+                >
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">20K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Tekstur pekat renyah di luar, lembut di dalam dengan taburan
+                garam laut.
+              </p>
+            </div>
+
+            <div class="menu-entry menu-entry--wide">
+              <div class="menu-entry__row">
+                <span class="menu-entry__name">Tape Bakar Keju Karamel</span>
+                <span class="menu-entry__leader"></span>
+                <span class="menu-entry__price">18K</span>
+              </div>
+              <p class="menu-entry__desc">
+                Tape singkong manis legit dibakar daun pisang dengan lelehan
+                gula karamel.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ADVISORY -->
+        <div class="advisory">
+          <span class="material-symbols-outlined advisory__icon">info</span>
+          <div>
+            <span class="advisory__title">Catatan Dapur &amp; Alergen</span>
+            <p class="advisory__text">
+              Ada alergi atau pantangan bahan makanan? Beri tahu tim kami saat
+              memesan. Pilihan vegetarian bertanda khusus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div class="footer__col--4 footer__brand">
+          <div>
+            <span class="footer__title">Kopi Samaya</span>
+            <p class="footer__text">
+              Sebuah ruang seduh dan santap di sudut Yogyakarta. Menjaga
+              ketenangan langkah, kehangatan percakapan, dan rasa bersahaja dari
+              dapur Nusantara.
+            </p>
+          </div>
+          <span
+            class="eyebrow eyebrow--on-dark"
+            style="color: var(--tertiary-fixed)"
+          >
+            Yogyakarta — Indonesia
+          </span>
+        </div>
+
+        <div class="footer__col--3">
+          <h4 class="footer__nav-title">Pintasan Menu</h4>
+          <ul class="footer__list">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a class="is-active" href="#">Buku Menu</a></li>
+            <li><a href="#">Lokasi &amp; Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col--3">
+          <h4 class="footer__nav-title">Jam Buka &amp; Sambang</h4>
+          <p class="footer__location-line">Setiap Hari: 08.00 — 23.00 WIB</p>
+          <p class="footer__location-line">
+            Jl. Palagan Tentara Pelajar No. 42, Sleman, D.I. Yogyakarta
+          </p>
+        </div>
+
+        <div class="footer__col--2">
+          <h4 class="footer__nav-title">Kanal Warta</h4>
+          <ul class="footer__list">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__imprint">
+          <p style="margin: 0">
+            © 2024 Kopi Samaya Yogyakarta. Dicetak dan diseduh dengan takzim.
+          </p>
+          <p class="footer__imprint-code" style="margin: 0">
+            Edisi Cetak Kertas No. 44-YGY
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== SCRIPT FILTER ==================== -->
+    <script>
+      function filterCategory(cat) {
+        const sections = document.querySelectorAll(".category-section");
+        const tabs = ["all", "camilan", "makanan-berat", "manisan"];
+
+        // Update gaya tab
+        tabs.forEach((t) => {
+          const el = document.getElementById(`tab-${t}`);
+          if (!el) return;
+          if (t === cat) {
+            el.classList.add("is-active");
+          } else {
+            el.classList.remove("is-active");
+          }
+        });
+
+        // Sembunyikan / tampilkan seksi
+        sections.forEach((sec) => {
+          sec.style.display =
+            cat === "all" || sec.id === cat ? "block" : "none";
+        });
+      }
+    </script>
+  </body>
+</html>

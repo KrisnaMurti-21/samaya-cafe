@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokasi &amp; Kunjungan — Kopi Samaya Yogyakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Work+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#hero"><em>Kopi</em> Samaya</a>
+
+        <nav class="main-nav">
+          <a class="nav-link" href="/">Beranda</a>
+          <a class="nav-link" href="/about.html">Tentang</a>
+          <a class="nav-link" href="/drink.html">Menu Minuman</a>
+          <a class="nav-link" href="/food.html">Menu Makanan</a>
+          <a class="nav-link nav-link--active" href="/location.html">Lokasi</a>
+          <a class="nav-link" href="/testimonial.html">Testimoni</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn--primary only-sm-up" href="#lokasi">Reservasi</a>
+          <button class="icon-btn" type="button" aria-label="Buku Menu">
+            <span class="material-symbols-outlined">menu_book</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== MAIN ==================== -->
+    <main class="main">
+      <!-- INDEX BAR -->
+      <div class="location-index">
+        <div class="location-index__left">
+          <span class="eyebrow eyebrow--secondary">Edisi Panduan Singgah</span>
+          <span class="location-index__sep">•</span>
+          <span class="eyebrow eyebrow--secondary"
+            >05 / Lokasi &amp; Akses</span
+          >
+        </div>
+        <span class="location-index__right">Kotabaru, Yogyakarta</span>
+      </div>
+
+      <!-- HERO -->
+      <section class="location-hero">
+        <h1 class="location-hero__title">Kunjungi Samaya</h1>
+        <p class="location-hero__lead">
+          Pemberhentian tenang di bawah rindangnya pepohonan kawasan cagar
+          budaya Kotabaru.
+        </p>
+      </section>
+
+      <!-- GRID 2 KOLOM -->
+      <div class="location-grid">
+        <!-- ============ KOLOM KIRI: INFORMASI ============ -->
+        <div class="location-info">
+          <!-- 01 / TITIK KOORDINAT -->
+          <div class="location-block">
+            <span class="location-block__label">01 / Titik Koordinat</span>
+            <p class="location-block__address">
+              Jl. Ungaran No. 14, Kotabaru, Kec. Gondokusuman, Kota Yogyakarta,
+              Daerah Istimewa Yogyakarta 55222
+            </p>
+            <div class="location-block__actions">
+              <button
+                class="copy-button"
+                type="button"
+                onclick="
+                  navigator.clipboard.writeText(
+                    'Jl. Ungaran No. 14, Kotabaru, Kec. Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55222',
+                  );
+                  this.innerText = 'Tersalin ke Papan Klip';
+                "
+              >
+                [Salin Alamat Lengkap]
+              </button>
+              <a
+                class="btn btn--primary btn--lg"
+                href="https://maps.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Petunjuk Arah (Google Maps)</span>
+                <span class="material-symbols-outlined" style="font-size: 16px"
+                  >north_east</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <!-- 02 / WAKTU LAYANAN -->
+          <div class="location-block">
+            <span class="location-block__label"
+              >02 / Waktu Layanan &amp; Seduh</span
+            >
+
+            <div class="hours-table">
+              <div class="hours-table__row">
+                <span class="hours-table__day">Senin – Jumat</span>
+                <span class="hours-table__time">08.00 – 22.00 WIB</span>
+              </div>
+              <div class="hours-table__row">
+                <span class="hours-table__day">Sabtu – Minggu</span>
+                <span class="hours-table__time">08.00 – 23.00 WIB</span>
+              </div>
+            </div>
+
+            <p class="location-block__note">
+              * Dapur dan bar seduh manual ditutup 30 menit sebelum jam
+              operasional kedai berakhir.
+            </p>
+          </div>
+
+          <!-- 03 / KONTAK & RESERVASI -->
+          <div class="location-block">
+            <span class="location-block__label"
+              >03 / Komunikasi &amp; Reservasi</span
+            >
+
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <span class="contact-list__key">WhatsApp</span>
+                <a
+                  class="contact-list__value"
+                  href="https://wa.me/6281234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +62 812-3456-7890
+                </a>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__key">Instagram</span>
+                <a
+                  class="contact-list__value"
+                  href="https://instagram.com/kopisamaya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @kopisamaya
+                </a>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__key">Surel</span>
+                <a class="contact-list__value" href="mailto:sapa@kopisamaya.id">
+                  sapa@kopisamaya.id
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 04 / FASILITAS -->
+          <div class="location-block">
+            <span class="location-block__label"
+              >04 / Fasilitas Ruang Singgah</span
+            >
+
+            <ul class="facility-list">
+              <li class="facility-list__item">
+                <span class="facility-list__dot"></span>
+                <span
+                  >Jaringan Wi-Fi serat optik stabil untuk nugas atau
+                  bekerja</span
+                >
+              </li>
+              <li class="facility-list__item">
+                <span class="facility-list__dot"></span>
+                <span
+                  >Parkir motor di pelataran dan kantong parkir mobil
+                  teduh</span
+                >
+              </li>
+              <li class="facility-list__item">
+                <span class="facility-list__dot"></span>
+                <span
+                  >Ruang duduk dalam berpendingin udara &amp; teras semi-terbuka
+                  bebas rokok</span
+                >
+              </li>
+              <li class="facility-list__item">
+                <span class="facility-list__dot"></span>
+                <span>Stop kontak di hampir setiap sudut meja kayu</span>
+              </li>
+              <li class="facility-list__item">
+                <span class="facility-list__dot"></span>
+                <span
+                  >Musala kecil yang bersih lengkap dengan sarana wudhu</span
+                >
+              </li>
+              <li class="facility-list__item">
+                <span class="facility-list__dot"></span>
+                <span
+                  >Rak buku sastra dan majalah cetak yang boleh dibaca
+                  bebas</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ============ KOLOM KANAN: PETA SKETSA ============ -->
+        <div class="location-map">
+          <div class="map-panel">
+            <div class="map-panel__head">
+              <span class="map-panel__title">Denah Panduan Lingkungan</span>
+              <span class="map-panel__scale">Skala Kotabaru 1:5000</span>
+            </div>
+
+            <div class="map-canvas">
+              <!-- Aliran Kali Code -->
+              <div class="map-canvas__river">
+                <span class="map-canvas__river-label">Aliran Kali Code</span>
+              </div>
+
+              <div class="map-canvas__inner">
+                <!-- Landmark Utara -->
+                <div class="map-canvas__landmark map-canvas__landmark--north">
+                  <div class="map-canvas__landmark-box">
+                    Utara: Stadion Kridosono
+                  </div>
+                  <div class="map-canvas__landmark-note">
+                    Kawasan Cagar Budaya
+                  </div>
+                </div>
+
+                <!-- Jalan + Pin -->
+                <div class="map-canvas__roads">
+                  <span class="map-canvas__street-name">Jl. Ungaran</span>
+
+                  <div class="map-canvas__pin">
+                    <div class="map-canvas__pin-head">
+                      <span class="map-canvas__pin-dot"></span>
+                      <span class="map-canvas__pin-name">Kopi Samaya</span>
+                    </div>
+                    <p class="map-canvas__pin-addr">Jl. Ungaran No. 14</p>
+                    <div class="map-canvas__pin-foot">
+                      <span>Pintu Masuk Kayu Ukir</span>
+                      <span class="accent">No. 14</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Landmark Selatan -->
+                <div class="map-canvas__landmark map-canvas__landmark--south">
+                  <div class="map-canvas__landmark-box">
+                    Selatan: Stasiun Lempuyangan
+                  </div>
+                  <div
+                    class="map-canvas__landmark-note map-canvas__landmark-note--secondary"
+                  >
+                    Daop VI Yogyakarta
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indikator jarak -->
+            <div class="map-panel__distances">
+              <div class="item">
+                <span class="material-symbols-outlined">directions_walk</span>
+                <span>3 menit jalan kaki dari Kridosono</span>
+              </div>
+              <span class="sep">•</span>
+              <div class="item">
+                <span class="material-symbols-outlined">train</span>
+                <span>5 menit dari Stasiun Lempuyangan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ FOTO FASAD (FULL WIDTH) ============ -->
+      <section class="facade-section">
+        <div class="facade-head">
+          <span class="eyebrow eyebrow--secondary"
+            >05 / Penanda Visual Singgah</span
+          >
+          <span class="eyebrow eyebrow--tertiary">Fasad Depan Kedai</span>
+        </div>
+
+        <div class="facade-photo">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfs2eJZjC1ekrbPuQYK88L8P0gQzYePe-vDD1OPCXoJFdc8FVPPd8EgwJF8ZUPD4TI5psXWGImHPeuwUsUXSzIphrk0l7sr-xyGxYjs57l_rKemw22-8QGXPXBfOAiy6vzoVkCt4ZilDPajw7V2HNBKj6J60EyB7iV0uDyuETCfXcQwo5l-hRHRjQp9uwzR9jQvbMprYHS_p2m3ubL2JBsp5nK-tnVz3AInxUoDJGnbNfssyxecZ2SJA"
+            alt="Fasad depan Kopi Samaya di Yogyakarta dengan dinding bata merah, pintu jati ukiran Jawa, dan lampion temaram."
+          />
+        </div>
+
+        <div class="facade-caption">
+          <span class="facade-caption__mark">※</span>
+          <p class="facade-caption__text">
+            Cari pintu kayu berukir dengan lampion gantung kuning yang menyala
+            hangat. Anda sudah tiba di Samaya.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="footer__grid">
+        <div class="footer__col--5 footer__brand">
+          <div>
+            <span class="footer__title">Kopi Samaya</span>
+            <p class="footer__text">
+              Kedai kopi berakar di Kotabaru, Yogyakarta. Menjaga ketenangan,
+              menghidangkan seduhan biji kopi Nusantara terpilih, dan merawat
+              ruang bercakap yang hangat.
+            </p>
+          </div>
+          <p class="footer__copyright">
+            © 2024 Kopi Samaya Yogyakarta. Dicetak dan diseduh dengan takzim.
+          </p>
+        </div>
+
+        <div class="footer__col--4">
+          <span class="footer__heading eyebrow eyebrow--on-dark"
+            >Indeks Halaman</span
+          >
+          <div class="footer__index-grid">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang</a>
+            <a href="#">Buku Menu</a>
+            <a class="is-active" href="#">Lokasi &amp; Kontak</a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+            <a href="https://wa.me" target="_blank" rel="noopener noreferrer"
+              >WhatsApp</a
+            >
+          </div>
+        </div>
+
+        <div class="footer__col--3">
+          <span class="footer__heading eyebrow eyebrow--on-dark"
+            >Kotabaru, Jogja</span
+          >
+          <div class="footer__channels">
+            <p>
+              Jl. Ungaran No. 14, Kotabaru, Kec. Gondokusuman, Kota Yogyakarta
+              55222
+            </p>
+            <p>Setiap Hari: 08.00 – 23.00 WIB</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
